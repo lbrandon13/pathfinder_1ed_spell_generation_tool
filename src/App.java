@@ -1,22 +1,24 @@
+import java.io.ObjectInputStream.GetField;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Character testCharacter = new Character("test", 18, "wizard", 5);
     }
 
-    class Character {
+    static class Character {
         
         private int id;
-        private int casting_stat_value;
-        private String character_class_value;
-        private int character_level_value;
-        private int[][] spell_list;
+        private int castingStatValue;
+        private String characterClassValue;
+        private int characterLevelValue;
+        private int[][] spellList;
 
-        public Character (String name, int casting_stat, String character_class, int character_level) {
+        public Character(String name, int casting_stat, String character_class, int character_level) {
             
             id = Integer.parseInt(name);
-            casting_stat_value = casting_stat;
-            character_class_value = character_class;
-            character_level_value = character_level;
+            castingStatValue = casting_stat;
+            characterClassValue = character_class;
+            characterLevelValue = character_level;
         }
 
     }
