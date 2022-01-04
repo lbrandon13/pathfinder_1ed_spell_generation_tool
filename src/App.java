@@ -1,5 +1,3 @@
-import java.io.ObjectInputStream.GetField;
-
 public class App {
     public static void main(String[] args) throws Exception {
         Character testCharacter = new Character("test", 18, "wizard", 5);
@@ -8,6 +6,9 @@ public class App {
         System.out.println(testCharacter.getCastingStatValue());
         System.out.println(testCharacter.getCharacterClassValue());
         System.out.println(testCharacter.getCharacterLevelValue());
+        
+        testCharacter.generateSpellList();
+        
     }
 
     static class Character {
@@ -56,10 +57,10 @@ public class App {
 
         public void generateSpellList() {
 
-            private int maxSpellLevel;
-            private int numberOfSpells;
+            int maxSpellLevel = 1;
+            int numberOfSpells = 1;
             // currently don't include stat bonus extra spells
-            if characterClassValue.equals("wizard") {
+            if (characterClassValue.equals("wizard")) {
                 switch (characterLevelValue) {
                     case 1: maxSpellLevel = 1;
                             numberOfSpells = 1;
@@ -123,6 +124,10 @@ public class App {
                             break;       
                 }
             }
+
+            spellList = new int[maxSpellLevel][numberOfSpells];
         }
+
+
     }
 }
