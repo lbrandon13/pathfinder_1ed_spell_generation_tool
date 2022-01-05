@@ -60,7 +60,7 @@ public class App {
             int maxSpellLevel = 1;
             int numberOfSpells = 1;
             // currently don't include stat bonus extra spells
-            if (characterClassValue.equals("wizard")) {
+            if (characterClassValue.equals("wizard") || characterClassValue.equals("druid") ) {
                 switch (characterLevelValue) {
                     case 1: maxSpellLevel = 1;
                             numberOfSpells = 1;
@@ -121,6 +121,70 @@ public class App {
                             break;
                     case 20: maxSpellLevel = 9;
                             numberOfSpells = 4;
+                            break;       
+                }
+            }
+            else if (characterClassValue.equals("cleric")) {
+                switch (characterLevelValue) {
+                    case 1: maxSpellLevel = 1;
+                            numberOfSpells = 2;
+                            break;
+                    case 2: maxSpellLevel = 1;
+                            numberOfSpells = 3;
+                            break;
+                    case 3: maxSpellLevel = 2;
+                            numberOfSpells = 3;
+                            break;
+                    case 4: maxSpellLevel = 2;
+                            numberOfSpells = 4;
+                            break;
+                    case 5: maxSpellLevel = 3;
+                            numberOfSpells = 4;
+                            break;
+                    case 6: maxSpellLevel = 3;
+                            numberOfSpells = 4;
+                            break;
+                    case 7: maxSpellLevel = 4;
+                            numberOfSpells = 5;
+                            break;
+                    case 8: maxSpellLevel = 4;
+                            numberOfSpells = 5;
+                            break;
+                    case 9: maxSpellLevel = 5;
+                            numberOfSpells = 5;
+                            break;
+                    case 10: maxSpellLevel = 5;
+                            numberOfSpells = 5;
+                            break;
+                    case 11: maxSpellLevel = 6;
+                            numberOfSpells = 5;
+                            break;
+                    case 12: maxSpellLevel = 6;
+                            numberOfSpells = 5;
+                            break;
+                    case 13: maxSpellLevel = 7;
+                            numberOfSpells = 5;
+                            break;
+                    case 14: maxSpellLevel = 7;
+                            numberOfSpells = 5;
+                            break;
+                    case 15: maxSpellLevel = 8;
+                            numberOfSpells = 5;
+                            break;
+                    case 16: maxSpellLevel = 8;
+                            numberOfSpells = 5;
+                            break;
+                    case 17: maxSpellLevel = 9;
+                            numberOfSpells = 5;
+                            break;
+                    case 18: maxSpellLevel = 9;
+                            numberOfSpells = 5;
+                            break;
+                    case 19: maxSpellLevel = 9;
+                            numberOfSpells = 5;
+                            break;
+                    case 20: maxSpellLevel = 9;
+                            numberOfSpells = 5;
                             break;       
                 }
             }
