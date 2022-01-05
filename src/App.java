@@ -188,6 +188,73 @@ public class App {
                             break;       
                 }
             }
+            /*
+            for adding once spontaneous casters are handled
+            else if (characterClassValue.equals("sorcerer")) {
+                switch (characterLevelValue) {
+                    case 1: maxSpellLevel = 1;
+                            numberOfSpells = 3;
+                            break;
+                    case 2: maxSpellLevel = 1;
+                            numberOfSpells = 4;
+                            break;
+                    case 3: maxSpellLevel = 1;
+                            numberOfSpells = 5;
+                            break;
+                    case 4: maxSpellLevel = 2;
+                            numberOfSpells = 6;
+                            break;
+                    case 5: maxSpellLevel = 2;
+                            numberOfSpells = 6;
+                            break;
+                    case 6: maxSpellLevel = 3;
+                            numberOfSpells = 6;
+                            break;
+                    case 7: maxSpellLevel = 3;
+                            numberOfSpells = 6;
+                            break;
+                    case 8: maxSpellLevel = 4;
+                            numberOfSpells = 6;
+                            break;
+                    case 9: maxSpellLevel = 4;
+                            numberOfSpells = 6;
+                            break;
+                    case 10: maxSpellLevel = 5;
+                            numberOfSpells = 6;
+                            break;
+                    case 11: maxSpellLevel = 5;
+                            numberOfSpells = 6;
+                            break;
+                    case 12: maxSpellLevel = 6;
+                            numberOfSpells = 6;
+                            break;
+                    case 13: maxSpellLevel = 6;
+                            numberOfSpells = 6;
+                            break;
+                    case 14: maxSpellLevel = 7;
+                            numberOfSpells = 6;
+                            break;
+                    case 15: maxSpellLevel = 7;
+                            numberOfSpells = 6;
+                            break;
+                    case 16: maxSpellLevel = 8;
+                            numberOfSpells = 6;
+                            break;
+                    case 17: maxSpellLevel = 8;
+                            numberOfSpells = 6;
+                            break;
+                    case 18: maxSpellLevel = 9;
+                            numberOfSpells = 6;
+                            break;
+                    case 19: maxSpellLevel = 9;
+                            numberOfSpells = 6;
+                            break;
+                    case 20: maxSpellLevel = 9;
+                            numberOfSpells = 6;
+                            break;       
+                }
+            }
+            */
 
             spellList = new int[maxSpellLevel][numberOfSpells];
         }
