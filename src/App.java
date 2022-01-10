@@ -2,10 +2,14 @@ public class App {
     public static void main(String[] args) throws Exception {
         Character testCharacter = new Character("test", 18, "wizard", 5);
 
+        Spell testSpell = new Spell("fireball", "evocation", "wizard", 3, "level d6 damage, up to 10");
+
         System.out.println(testCharacter.getId());
         System.out.println(testCharacter.getCastingStatValue());
         System.out.println(testCharacter.getCharacterClassValue());
         System.out.println(testCharacter.getCharacterLevelValue());
+
+        System.out.println(testSpell.getName());
         
         testCharacter.generateSpellList();
         
@@ -275,6 +279,14 @@ public class App {
         private int level;
         private String description;
         // in time add extra variables for determining macro function?
+
+        public Spell(String name, String school, String spellClass, int level, String description) {
+                this.name = name;
+                this.school = school;
+                this.spellClass = spellClass;
+                this.level = level;
+                this.description = description;
+        }
 
         public String getName() {
                 return name;
