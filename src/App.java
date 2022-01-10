@@ -261,4 +261,19 @@ public class App {
 
 
     }
+
+    static class Spell {
+
+        private String name;
+        // change to enum?
+        private String school;
+        // change to enum?
+        // will need multiple instances of same spell with different 
+        // spell_class value to allow for same spell at different
+        // levels
+        private String spell_class;
+        private int level;
+        private String description;
+        // in time add extra variables for determining macro function?
+    }
 }
