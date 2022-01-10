@@ -271,9 +271,29 @@ public class App {
         // will need multiple instances of same spell with different 
         // spell_class value to allow for same spell at different
         // levels
-        private String spell_class;
+        private String spellClass;
         private int level;
         private String description;
         // in time add extra variables for determining macro function?
+
+        public String getName() {
+                return name;
+        }
+
+        public String getSchool() {
+                return school;
+        }
+
+        public String getSpellClass() {
+                return spellClass;
+        }
+
+        public int getLevel() {
+                return level;
+        }
+
+        public String getDescription() {
+                return description;
+        }
     }
 }
