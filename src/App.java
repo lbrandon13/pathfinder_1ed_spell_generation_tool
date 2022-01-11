@@ -59,6 +59,22 @@ public class App {
             return characterLevelValue;
         }
 
+        /* 
+         * how to handle searching?
+         * 
+         * first thought is to store spell objects in single hashmap:
+         * 
+         * makes retrieval easy when key (int) is known
+         * however to generate spell list from full hashmap would be very intensive?
+         * would loop through each item in hashmap, then extract and compare spell level and spell class vs desired one
+         * would store relevant ones in a list?, then randomly pick from that list (with some kind of weighting?)
+         * 
+         * second thought is to manually store prebuilt lists in various classes, so either instances of a large class, or have extended class
+         * so would have a wizard class/instance (for example) which would have 9 list/arrays of possible spells
+         * so when adding new spells would need to be added to hashmap and then each instance of the various classes
+         * so seems that being able to save the various classes and spells and hashmaps is very important  
+         * 
+        */
         public void generateSpellList() {
 
             int maxSpellLevel = 1;
